@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="600" fill="#ffffff"/>
+    
+    <!-- Workflow Steps -->
+    <g transform="translate(50, 50)">
+        <!-- Data Collection -->
+        <rect x="0" y="0" width="150" height="80" rx="10" fill="#4361ee" opacity="0.9"/>
+        <text x="75" y="45" text-anchor="middle" fill="white" font-family="Arial" font-size="14">Data Collection</text>
+        
+        <!-- Data Preprocessing -->
+        <rect x="200" y="0" width="150" height="80" rx="10" fill="#3a0ca3" opacity="0.9"/>
+        <text x="275" y="45" text-anchor="middle" fill="white" font-family="Arial" font-size="14">Data Preprocessing</text>
+        
+        <!-- Feature Engineering -->
+        <rect x="400" y="0" width="150" height="80" rx="10" fill="#7209b7" opacity="0.9"/>
+        <text x="475" y="45" text-anchor="middle" fill="white" font-family="Arial" font-size="14">Feature Engineering</text>
+        
+        <!-- Model Training -->
+        <rect x="200" y="200" width="150" height="80" rx="10" fill="#f72585" opacity="0.9"/>
+        <text x="275" y="245" text-anchor="middle" fill="white" font-family="Arial" font-size="14">Model Training</text>
+        
+        <!-- Model Evaluation -->
+        <rect x="400" y="200" width="150" height="80" rx="10" fill="#4cc9f0" opacity="0.9"/>
+        <text x="475" y="245" text-anchor="middle" fill="white" font-family="Arial" font-size="14">Model Evaluation</text>
+        
+        <!-- Deployment -->
+        <rect x="600" y="200" width="150" height="80" rx="10" fill="#ff9f1c" opacity="0.9"/>
+        <text x="675" y="245" text-anchor="middle" fill="white" font-family="Arial" font-size="14">Deployment</text>
+    </g>
+    
+    <!-- Connecting Arrows -->
+    <g stroke="#495057" stroke-width="2" fill="none">
+        <!-- Horizontal Arrows -->
+        <path d="M150 90 L200 90" marker-end="url(#arrowhead)"/>
+        <path d="M350 90 L400 90" marker-end="url(#arrowhead)"/>
+        <path d="M350 240 L400 240" marker-end="url(#arrowhead)"/>
+        <path d="M550 240 L600 240" marker-end="url(#arrowhead)"/>
+        
+        <!-- Vertical Arrows -->
+        <path d="M475 80 L475 200" marker-end="url(#arrowhead)"/>
+        <path d="M275 80 L275 200" marker-end="url(#arrowhead)"/>
+    </g>
+    
+    <!-- Arrow Marker -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+        refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#495057"/>
+        </marker>
+    </defs>
+    
+    <!-- Metrics -->
+    <g transform="translate(50, 400)">
+        <rect width="700" height="100" rx="10" fill="#f8f9fa"/>
+        
+        <!-- Accuracy -->
+        <g transform="translate(50, 30)">
+            <text font-family="Arial" font-size="14" fill="#212529">Accuracy</text>
+            <rect x="0" y="20" width="120" height="10" rx="5" fill="#e9ecef"/>
+            <rect x="0" y="20" width="96" height="10" rx="5" fill="#4361ee"/>
+        </g>
+        
+        <!-- Precision -->
+        <g transform="translate(250, 30)">
+            <text font-family="Arial" font-size="14" fill="#212529">Precision</text>
+            <rect x="0" y="20" width="120" height="10" rx="5" fill="#e9ecef"/>
+            <rect x="0" y="20" width="108" height="10" rx="5" fill="#3a0ca3"/>
+        </g>
+        
+        <!-- Recall -->
+        <g transform="translate(450, 30)">
+            <text font-family="Arial" font-size="14" fill="#212529">Recall</text>
+            <rect x="0" y="20" width="120" height="10" rx="5" fill="#e9ecef"/>
+            <rect x="0" y="20" width="102" height="10" rx="5" fill="#7209b7"/>
+        </g>
+    </g>
+</svg>
